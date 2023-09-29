@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* h1 predstavlja css selector,sto je zapravo pravilo pomocu kojeg pristupamo html elementu za kojim zelimo da definisemo stilove */
+      h1 {
+        /* color predstavlja css propertt (svojstvo) */
+        color: red;
+      }
+      p {
+        /* font-size:16px;standarna velicina slova je 16px */
+        font-size: 18px;
+        text-indent: 25px;
+        /* text-align:left je defaultna vrednost */
+        text-align: left;
+        text-align: center;
+        text-align: justify;
+        text-align-last: center;
+        /* text-transform: capitalize; */
+        /* text-transform: uppercase; */
+        /* text-transform: lowercase; */
+        /* primenice se poslednje definisano svojstvo */
+        /* text-align-last nam sluzi da podesimo zadnji red teksta */
+        /* tacka se stavlja prije unesenje da obojimo kontenjer koji hocemo u cssu */
+        /* hashtag stavljamo kada hocemo da obojimo nesto unutar obojenog kontenjera */
+      }
+      ul {
+        list-style-position: inside;
+      }
+      .prvi {
+        background-color: burlywood;
+        width: 400px;
+        height: 400px;
+      }
+      /* id ima prioritet u odnosu na klasu kada se radi o primerni stilova */
+      /* obicno cemo koristiti id ako zelimo da definisemo neki jedinstven element. */
+      #naslov {
+        color: aqua;
+      }
+      .naslov {
+        color: rgb(7, 214, 7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="prvi">
+      <h1>Danas radimo CSS.</h1>
+      <!-- Jezik za definisanje stilova na nasoj stranici -->
+      <h2 id="naslov" class="naslov">
+        CSS mozemo primeniti na nekoliko nacina
+      </h2>
+      <ul>
+        <li style="color: blue; text-align: center">inline stilovi</li>
+        <li>stilovi definisani unutar head tagu</li>
+        <li>eksterni stilovi</li>
+      </ul>
+      <p>Paragraf prvog kontejnera</p>
+    </div>
+    <div>
+      <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nemo animi
+        labore repellat. Vitae cum voluptatibus quasi ab pariatur possimus
+        neque? Voluptatum, culpa molestiae at suscipit laborum vitae id.
+        Voluptates!
+      </h1>
+      <p style="color: blue">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+        officiis, dolorem adipisci aperiam ut impedit consequuntur! Eveniet
+        commodi quis maxime ab iusto quod optio, tenetur atque voluptatum amet
+        labore nostrum ratione unde, eligendi, ducimus fugit laborum mollitia
+        ipsum ex iure dolore. Repudiandae neque ullam magnam sit blanditiis, id
+        mollitia Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Excepturi ullam vel eaque repudiandae sapiente? Dolorum, minima ipsum
+        mollitia quibusdam illum accusantium id quae deleniti dolor. Accusantium
+        vel a repellendus similique ducimus nulla aspernatur eos asperiores
+        impedit. Officiis incidunt, nulla molestiae officia at atque nam
+        repellat repudiandae. Aliquam eligendi asperiores sunt?
+      </p>
+    </div>
+  </body>
+</html>

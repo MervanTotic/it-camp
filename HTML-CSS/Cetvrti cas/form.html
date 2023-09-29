@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+      <body>
+        <div>
+          <!-- form nam sluzi da pokrene unesenje u sajt,i gde da nas odvede kad se ulogujemo -->
+          <form action="./success.html">
+            <!-- label je bitan da se slaze sad id tagom ,a placeholder pokazuje sta bi trebao korisnik da unese-->
+            <label for="username">Unesite vass username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="username"
+            />
+            <br />
+            <label for="email">Unesite vas email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="usergmail.com"
+              required
+            />
+            <!-- required je atribut za obavezno unesenje,ako korisnik pokusa da potvrdi bez uneti podataka -->
+            <!-- button je tag da dodamo dugme na sajtu -->
+            <!-- br je tag da pokrenemo novo polje za kucanje -->
+            <br />
+            <br />
+            <label for="pass">Unesite lozinku:</label>
+            <input type="password" name="password" id="pass" required />
+            <br />
+            <br />
+            <label for="age">Unesite broj godina:</label>
+            <input type="number" name="age" id="age" min="18" max="100" />
+            <br />
+            <br />
+            <label for="birthdate">Unesite datum rodenja:</label>
+            <input
+              type="date"
+              name="birthdate"
+              id="birthdate"
+              min="1900-01-01"
+              max="2020-01-01"
+            />
+            <br />
+            <br />
+            <p>
+              Oznacite vase omiljeno voce:(Moguce je cekirati vise ponudjenih
+              odgovora)
+            </p>
+            <label for="jagode">Jagode</label>
+            <input type="checkbox" name="jagode" id="jagode" checked />
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana" id="banana" />
+            <label for="ananas">Ananas</label>
+            <input type="checkbox" name="ananas" id="ananas" />
+            <br />
+            <br />
+            <p>Oznacite pol:</p>
+            <label for="m">M</label>
+            <input type="radio" name="pol" id="m" value="m" />
+            <label for="z">Z</label>
+            <input type="radio" name="pol" id="z" value="Z" />
+            <br />
+            <br />
+            <!-- textarea sluzi za unes teksta u sajt -->
+            <!-- maxlength sluzi da stavimo broj dokle moze da korisnik kuca -->
+            <label for="bio">Unesite vasu biografiju:</label>
+            <textarea name="bio" id="bio" cols="30" rows="10" maxlength="10">
+tekst...</textarea
+            >
+            <br />
+            <br />
+            <label for="phone">Unesite vas broj telefona:</label>
+            <input type="tel" name="phone" id="phone" />
+            <br />
+            <br />
+            <label for="file">Ubacite vas CV obrazac:</label>
+            <input type="file" name="CV" id="file" />
+            <br />
+            <br />
+            <label for="color">Odaberite vasu boju:</label>
+            <input type="color" name="boja" id="color" />
+            <br />
+            <br />
+            <!-- select tag nam sluzi da ponudimo korisniku neke opcijes -->
+            <p>Oznacite boju vasih ociju:</p>
+            <select name="eyecolor" id="eyecolor">
+              <option value="braon">Braon</option>
+              <option value="plava">Plava</option>
+              <option value="zelena">Zelena</option>
+              <option value="crna">Crna</option>
+            </select>
+            <br />
+            <br />
+            <!-- submit nam sluzi da potvrdimo dugme -->
+            <!-- reset nam sluzi da resetamo podatke -->
+            <button type="reset">Resetuj</button>
+            <button type="submit">Potvrdi</button>
+          </form>
+        </div>
+      </body>
+    </html>
+  </head>
+</html>

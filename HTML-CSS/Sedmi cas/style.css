@@ -1,0 +1,60 @@
+body {
+  background-color: white;
+}
+
+.main {
+  width: 500px;
+  height: 750px;
+  background-color: crimson;
+  border: 3px solid black;
+  /* margin: 50px; margina u odnosu na sve cetiri strane */
+  /*margina u odnosu na gornji element*/
+  /*margina u odnosu na desni element*/
+  /*margina u odnosu na donji element*/ /* margina u odnosu na levu stranu*/
+  margin: 20px; /*top right bottom left*/
+  /* top & bottom,right & left*/ /*top,right & ; /*auto-pojednjako udaljen element od leve i desne strane*/
+  padding: 10px 25x;
+  /* border-radius: 10px 5px 15px 0px; */
+  border-radius: 10px;
+  /* boxshadow sluzi za senku kontejnera */
+  /* overflow: visible; defaultna vrednost */
+  /* overflow: hidden; sakriva vrednost */
+  /* overflow: scroll; funkcija za scrollanje */
+  /* overflow: auto; funkcija za auto scrollanjess */
+  overflow: auto;
+  display: inline-block;
+  box-shadow: 3px 3px 12px rgb(0, 0, 0),-3px -3px -12px(0, 0, 0)
+  /* visbility: hidden sakriva element i prostor ostaje rezervisan za taj element */
+  /*display nam omogucava da stavimo kontenjera pored ili ispod jednjih drugi */
+  /* display:none sakriva element i prostor moze biti iskoricen narednim elementom. */
+}
+/* img:hover nam sluzi da sadrzaj menja sliku kad stavimo mis na tu prethodnu sliku,i koristimo dodatak content */
+/* block dodatak nam je da stavimo kontejnere jedan ispod drugog,a iline-block da stavimo jeadn pored drugog */
+/* Block level html elementi: */
+/* <h1>,<h2>,<h3>,<h4>,<h5>,<h6> */
+/* <p> */
+/* <div>,<main>,<article>,<section>,<header>,<footer> */
+/* <ol>,<ul>,<li> */
+
+/* inline html elementi: */
+/* <input>,<a>,<span>,<button>,<textarea> */
+/* <img> tag je inline-block element - to su elemnti koji dozvoljavaju definisanje sirine i visine za razliku od inline elemenata. */
+
+img:hover {
+  content: url(https://bestlifeonline.com/wp-content/uploads/sites/3/2023/06/ocean-facts.jpg?quality=82&strip=1&resize=640%2C360)
+}
+
+div {
+  box-shadow: 3px 3px 12px rgb(0, 0, 0) 
+}
+
+.main:nth-of-type(2) {
+  display: none;
+}
+
+  /* width
+  background-color: yellow;
+
+.main p {
+  text-align: justify;
+

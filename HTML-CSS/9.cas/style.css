@@ -1,0 +1,22 @@
+div {
+  background-image: url(https://www.snexplores.org/wp-content/uploads/2020/04/1030_LL_trees-1028x579.png);
+  width: 500px;
+  height: 500px;
+  background-color: aquamarine;
+  background-repeat: no-repeat;
+  /* background-repeat; defaultna vrednost */
+  background-size: 300px 400px;
+  background-size: 100% 100%;
+  /* background-size: contain; razvlaci se fotografija do momenta dok ne stigne do prve ivice */
+  /* background-size: cover; razvlaci se fotografija kako bi prekrila ceo kontejner (gubi se deo fotografije) */
+}
+
+h1,
+p {
+  color: purple;
+}
+
+.first p {
+  line-height: 30px;
+  letter-spacing: 2px;
+}
